@@ -14,5 +14,5 @@ export const getJob = async () => {
     return jobs[0].data.code;
 }
 export const cleanJobs = async () => {
-    await queue.obliterate();
+    await queue.obliterate({ force: true });
 }
